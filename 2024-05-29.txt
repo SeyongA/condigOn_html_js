@@ -26,14 +26,21 @@ Project
 	git config --global user.email "email"
 	git config user.email
 
-* 해당 폴더 이동
+* 해당 폴더 이동(처음)
 	git init : 깃 생성
-	git add : 깃에 추가
+	git add . : 깃에 추가
 	git commit -m "test" : 커밋 실행
 	git remote add origin 주소 :  경로 설정
 	git push -u origin master
 	
 	git status : 상태 확인
+
+* 추가로 올릴때
+	cd C:/KDT_html_js
+	git status
+	git add . 
+	git commit -m "test" 
+	git push : 저장소에 업로드
 
 
 
