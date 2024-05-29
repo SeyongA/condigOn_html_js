@@ -1,0 +1,50 @@
+Project
+
+1. web 
+2. front (expreess) node.js
+3. front (react) node.js
+4. back (java)- spring boot
+
+
+*git 사용법*
+	https://github.com/SeyongA
+	내컴퓨터(local) <--> 원격 저장소(github)
+	cmd --> git 아무것도 안뜨면 설치해야함
+	(https://git-scm.com/download/win) 밑에 주소로 가서 Standalone Installer 64bit download
+
+* cmd 명령어
+
+	cd - 디렉터리 이동(폴더 이동)
+	dir - 폴더, 파일 목록보기
+	c:/ (c의 루트)
+
+* git 명령어
+	git  계정 설정
+	
+	git config --global user.name "name"
+	git config user.name
+	git config --global user.email "email"
+	git config user.email
+
+* 해당 폴더 이동
+	git init : 깃 생성
+	git add : 깃에 추가
+	git commit -m "test" : 커밋 실행
+	git remote add origin 주소 :  경로 설정
+	git push -u origin master
+	
+	git status : 상태 확인
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
