@@ -13,7 +13,7 @@ Project
 	(https://git-scm.com/download/win) 밑에 주소로 가서 Standalone Installer 64bit download
 
 * cmd 명령어
-
+	cd..  상위폴더로 이동
 	cd - 디렉터리 이동(폴더 이동)
 	dir - 폴더, 파일 목록보기
 	c:/ (c의 루트)
@@ -34,6 +34,7 @@ Project
 	git push -u origin master
 	
 	git status : 상태 확인
+	git clone 깃허브 리포지터리 계정 주소 : 자료 다운로드 받음
 
 * 추가로 올릴때
 	cd C:/KDT_html_js

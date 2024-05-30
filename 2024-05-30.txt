@@ -1,3 +1,13 @@
+멀티미디어 - 이미지, 음악파일, 영상파일
+<img> .jpg .gif ,webp
+<audio> mp3
+<video> mp4
+
+검색 폼 - search
+로그인 폼 - login(sign in)
+회원가입 폼 -sign up
+게시판 글쓰기 폼 -wirte
+
 shop project
 	- indext.html (인덱스페이지)
 	- product.html 상품 소개(수박)
