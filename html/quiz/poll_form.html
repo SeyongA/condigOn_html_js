@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사 폼 만들기</title>
+</head>
+<body>
+    <h2><b>설문조사</b></h2>
+    <form action="" method="post">
+        <p>
+            <label for="name">이름 : </label>
+            <input type="text" required autofocus
+                    placeholder="홍길동"> <br>
+            <label>이메일 : </label>
+            <input type="email" required
+                    placeholder="example@example.com">
+        </p>
+        <p>
+            <legend><b>나이</b></legend> <br>
+            <label><input type="radio" name="age" value="10대" checked> 10대</label>
+            <label><input type="radio" name="age" value="20대"> 20대</label>
+            <label><input type="radio" name="age" value="30대"> 30대</label>
+            <label><input type="radio" name="age" value="40대"> 40대</label>
+            <label><input type="radio" name="age" value="50대"> 50대</label>
+            <label><input type="radio" name="age" value="60대 이상"> 60대 이상</label>
+        </p>
+
+        <p>
+            <legend><b>원하는 강의 선택(중복 선택 가능)</b></legend> <br>
+            <label><input type="checkbox" name="S" value="html">html</label>
+            <label><input type="checkbox" name="S" value="javascript">javascript</label>
+            <label><input type="checkbox" name="S" value="css">css</label>
+        </p>
+        <div>
+            <p>
+                <textarea name="" id="" rows="7" cols="70" 
+                placeholder="하고싶은 말을 써주세요 :>"></textarea>
+                <button type="submit">제출</button>
+                <button type="reset">취소</button>
+            </p>
+        </div>
+    </form>
+
+</body>
+</html>

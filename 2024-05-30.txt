@@ -1,0 +1,20 @@
+검색 폼 - search
+로그인 폼 - login(sign in)
+회원가입 폼 -
+
+
+shop project
+	- indext.html (인덱스페이지)
+	- product.html 상품 소개(수박)
+	- board.html (게시판)
+
+구역분리
+	<div></div>
+
+이미지 파일 확장자
+
+	.jpg - 사진 촬영, 색상이 많음
+	.gif - 256가지, 움직이는 이미지, 캐릭터
+	.png - 인터넷용, 용량이 작음
+	.webp - 인터넷용 파일
+

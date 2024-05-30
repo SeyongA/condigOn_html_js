@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼</title>
+</head>
+<body>
+    <h2>로그인 폼</h2>
+    <!-- 전송방식 : post(보안유지 - 보이지 않음)
+        get(브라우저에서 보임) -->
+    <form action="loginProcess.jsp" method="post">
+        <p>
+            <label>ID : </label>
+            <!-- required : 유효성 검사하는 속성 -->
+            <!-- atuofocus : 바로 입력할수있게 해주는 속성 -->
+            <!-- placeholder : 입력란 힌트 -->
+            <input type="text" name="id" autofocus required 
+                    placeholder="ID를 입력하세요">
+        </p>
+        <p>
+            <label>PW : </label>
+            <input type="password" name="password" required
+                    placeholder="PASSWORD 입력">
+        </p>
+        <button type="submit">
+            로그인
+        </button>
+    </form>
+</body>
+</html>
