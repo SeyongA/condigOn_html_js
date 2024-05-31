@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 관련 스타일</title>
+    <style>
+        table{
+            /* border */
+            /* border-width: 1px;
+            border-style: solid;
+            border-color: blue; */
+            border : 1.5px solid blue;
+            /* table과 td의 border를 합친다 */
+            border-collapse: collapse;
+            width: 200px;
+        }
+        td{
+            border : 1.5px solid blue;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+    </table>
+</body>
+</html>

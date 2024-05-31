@@ -1,0 +1,17 @@
+table{
+    border: 1px solid gray ;
+    border-collapse: collapse;
+    padding: 20px;
+    width: 400px;
+}
+
+th, td{
+    border: 1px solid gray;
+    text-align: center;
+    font-family: 굴림;
+    line-height: 3;
+}
+
+th{
+    background-color: #eee;
+}

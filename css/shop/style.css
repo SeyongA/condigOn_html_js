@@ -1,0 +1,21 @@
+table{
+    border : 1px solid #ccc;
+    border-collapse : collapse;
+}
+
+
+th, td{
+    border : 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+thead{
+    background-color: #eee;
+}
+
+img{
+    border : 1px solid rgb(46, 46, 221);
+    /* 테두리를 둥글게 */
+    border-radius: 5px;
+}

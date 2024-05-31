@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table_Menu</title>
+    <style>
+        table{
+            width: 200px;
+            line-height: 1.5;
+            border : 1px solid gray;
+            border-collapse: collapse;
+ 
+        }
+
+        th, td {
+            border : 1px solid gray;
+            text-align: center;
+            width : 60px;
+        }
+
+        thead{
+            background-color: #eeeeee;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 align = "center">메뉴표</h3>
+    <table>
+        <colgroup>
+            <col style="background-color: beige; width: 100px;" >
+            <col style="width : 100px">
+        </colgroup>
+        <thead>
+            <tr align="center">
+                <th>분류</th>
+                <th width = "100">음식</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">분식</td>
+                <td >라면</td>
+            </tr>
+            <tr>
+                <td>김밥</td>
+            </tr>
+            <tr>
+                <td>떡볶이</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="3">한식</td>
+                <td>김치찌개</td>
+            </tr>
+            <tr>
+                <td>김치찌개</td>
+            </tr>
+            <tr>
+                <td>된장찌개</td>
+            </tr>
+        </tbody>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table_Menu</title>
+</head>
+<body>
+    <h3 align = "center">메뉴표</h3>
+    <table border="1" cellspacing = "2" align="center">
+        <tr>
+            <td width = "70" align="center">분류</td>
+            <td colspan="3" width = "300" align="center">음식</td>
+        </tr>
+        <!-- tr에 넣으면 안에 있는거 전부다 가운데 정렬 -->
+        <tr  align="center">
+            <td >분식</td>
+            <td >라면</td>
+            <td >김밥</td>
+            <td >떡볶이</td>
+        </tr>
+        <tr>
+            <td align="center">한식</td>
+            <td align="center">된장찌개</td>
+            <td align="center">김치찌개</td>
+            <td align="center">부대찌개</td>
+        </tr>
+    </table>
+            <hr>
+    <table border="1" cellspacing = "2"  align="center">
+        <colgroup>
+            <col style="background-color: beige;">
+            <col>
+        </colgroup>
+        <thead>
+            <tr align="center">
+                <td>분류</td>
+                <td width = "100">음식</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">분식</td>
+                <td >라면</td>
+            </tr>
+            <tr>
+                <td>김밥</td>
+            </tr>
+            <tr>
+                <td>떡볶이</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="3">한식</td>
+                <td>김치찌개</td>
+            </tr>
+            <tr>
+                <td>김치찌개</td>
+            </tr>
+            <tr>
+                <td>된장찌개</td>
+            </tr>
+        </tbody>
+    </table>
+        <hr>
+    <h2>주류 메뉴판</h2>
+    <table border="1" cellspacing = "0" align="center"> 
+    <colgroup>
+    <col>
+    <col width ="200">
+    </colgroup>
+        <tr>
+            <td rowspan="3" width = "100" height = "100" align="center"> 양주</td>
+            <td>
+                <ul>
+                    <li>잭다니엘</li>
+                    <li>잭다니엘</li>
+                    <li>잭다니엘</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
