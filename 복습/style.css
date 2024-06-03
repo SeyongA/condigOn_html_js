@@ -1,0 +1,29 @@
+    table{
+        border : 2px solid black;
+        border-collapse: collapse;
+        padding : 2px;
+        text-align: center;
+        font-family: 궁서;
+    }
+
+    th, td {
+        border: 1px solid black;
+        width: 70px;
+    }
+
+    td{
+        height: 100px;
+    }
+    th{
+        background-color: antiquewhite;
+        line-height: 2;
+    }
+    
+    caption{
+        font-family: 굴림;
+        font-weight: bold;
+        font-size : 20px;
+        line-height: 3;
+    }
+    
+    

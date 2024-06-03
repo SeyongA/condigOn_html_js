@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사 폼 만들기</title>
+    <link rel="stylesheet" href="aaa.css">
+</head>
+<body>
+    <form action="name">
+        <h4 id="main">설문조사</h4>
+        <p>
+            <label for="name">이름</label>
+            <label><input type="text" required autofocus></label>
+        </p>
+        <p>
+
+            <label for="email">이메일</label>
+            <label><input type="email" placeholder="example@exam.com" required></label>
+        </p>
+        <p>
+            <h4>나이</h6>
+            <label><input type="radio" name="age" value="10대" checked>10대</label>
+            <label><input type="radio" name="age" value="20대" >20대</label>
+            <label><input type="radio" name="age" value="30대" >30대</label>
+            <label><input type="radio" name="age" value="40대" >40대</label>
+            <label><input type="radio" name="age" value="50대" >50대</label>
+            <label><input type="radio" name="age" value="60대 이상">60대 이상</label>
+        </p>
+            <h4>원하는 강의(중복 선택 가능)</h4>
+        <p>
+            <label><input type="checkbox" name="lang" value="html"> html</label>
+            <label><input type="checkbox" name="lang" value="js"> js</label>
+            <label><input type="checkbox" name="lang" value="css"> css</label>
+    
+        </p>
+             <h4>질문 또는 건의사항</h4>
+        <P>
+            <textarea name="QnA" id="1" rows="10" cols="50" placeholder="하고싶은말을 작성해주세요" ></textarea>
+            <button type="submit">제출</button>
+            <button type="reset">취소</button>
+        </P>
+    </form>
+</body>
+</html>

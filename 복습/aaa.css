@@ -1,0 +1,15 @@
+h4{
+    font-size: large;
+    text-align: justify;
+    background-color: bisque;
+}
+
+body{
+    padding: 0px;
+    padding-left: 30px;
+    background-color: antiquewhite;
+}
+
+#main{
+    font-size: 30px;
+}
