@@ -1,0 +1,39 @@
+상단메뉴(전역메뉴) - navebar
+<nav></nav>
+
+    display:
+    float:  
+
+    display:flex
+
+배치
+    -display : (일를적)
+    -float : (약간의 개별성) : 부동(위치가 정해지지 않음)
+    -position :(완전 독립적 배치)
+
+box-sizing : border-box
+
+
+display - 배치
+
+    수직 : display : block
+    수평 : display : inline
+    수평(속성) : display:inline-block
+
+    float - 배치
+
+form(폼)
+    <input type ='date'>
+    생일 - date
+    미팅시간 - datetime
+
+    날짜+시간 :
+    <input type="datetime-local">
+
+    수량 - 개수 
+    <input type = 'number'>
+
+word-wrap 속성
+    영어 단어를 줄바꿈(알파벳철자, 단어)
+    word-wrap: break-word;
+    word-break : break-all;
