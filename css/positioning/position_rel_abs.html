@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 속성 예제</title>
+    <style>
+        *{
+            border-collapse: collapse;
+        }
+        #wrap{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #222;
+            position: relative;
+            margin: 100px 50px;
+        }
+    
+        #wrap>div{
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }                                  
+        #box1{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+            top:50px;
+            left: 100px;
+            border-radius: 50px;
+        }
+        #box2{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+            left: 0;
+            top: 0;
+        }
+        #box3{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+            top : 0;
+            right : 0;
+        }
+        #box4{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+            bottom : 0;
+            right : 0;
+        }
+        #box5{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+    </div>
+</body>
+</html>

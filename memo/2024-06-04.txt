@@ -9,7 +9,10 @@
 배치
     -display : (일를적)
     -float : (약간의 개별성) : 부동(위치가 정해지지 않음)
-    -position :(완전 독립적 배치)
+    -position :(완전 독립적 배치) : absoulute, relative, fixed
+    
+도형 3개 겹침(빨간, 녹색, 파란) - 숫자가 크면 위로 배치되고, 작으면 아래로 배치됨
+    - z-index: 1
 
 box-sizing : border-box
 
