@@ -1,0 +1,59 @@
+@charset "utf-8";
+#content{
+    width: 1000px;
+    margin: 30px auto;
+}
+
+#content>h1{
+    text-align: center;
+}
+
+#content .product_list{
+    list-style: none;
+    padding-left: 10px;
+}
+
+#content .product_list li{
+    float: left;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    line-height: 1.5;
+
+}
+/* 밑에 선이 생겨서 거슬릴 때 */
+#content .product_list li img{
+    float: left;
+}
+#content .product_list li:hover .detail{
+transform: translateY(-200px);
+}
+
+#content .product_list .detail{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 200px;
+    transition: all 0.7s;
+}
+
+#content .product_list .detail h2, p{
+    text-align: center;
+    color: #f2f2f2;
+}
+
+/* 
+    li : 부모
+    detail : 자식
+
+    순서
+    li에 relative
+    -> 부모에 따라 바뀌니깐 detail을 absolute로 설정하고,
+        올라가는 모션을 넣어준다
+    -> overflow : hidden을 사용해서 li의 내용을 숨겨준다.
+*/
+
+
+
+

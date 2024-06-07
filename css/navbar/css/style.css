@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 공통 스타일 */
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    height: 80px;
+    background-color: navy;
+}
+
+header #logo{
+    float: left;
+    width: 250px;
+    line-height: 80px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+header nav{
+    float: right;
+    width: 700px;
+    line-height: 80px;
+}
+
+header nav ul{
+    padding-left: 100px;
+}
+header nav ul li{
+    float: left;
+}
+
+header #logo h1 a:hover{
+    color: black;
+    -webkit-text-stroke: 2px #fff;
+}
+
+
+header nav ul li:hover{
+    background-color: #fff;
+    color: blue;
+}
+
+
+
+header nav ul li a {
+    display: block;
+    padding: 0 30px;
+}
