@@ -1,0 +1,10 @@
+responsive_web
+
+html - 뷰포트
+<meta name = "viewport">
+
+css - 미디어 쿼리
+@media screen and (min-width : 400px){
+    body{background : green}
+}
+세로(400px), 가로(760px)

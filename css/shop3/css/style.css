@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+/* 공통스타일  */
+/* 모바일 기준 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #f29119;
+}
+
+ul li {
+    list-style: none;
+}
+
+#container{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    min-height: 800px;
+}
+
+#container header{
+    background-color: lightblue;
+    height: 240px;
+}
+
+#container header #logo{
+    width: 10%;
+    height: 240px;
+    float: left;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+#container header #logo h1{
+    font-size: 26px;
+}
+
+#container header #logo h1 a:hover{
+    color: greenyellow;
+}
+#container header nav{
+    width: 76%;
+    height: 240px;
+    float: left;
+    margin-top : 40px;
+}
+
+#container header nav ul{
+    text-align: center;
+}
+#container header nav ul li a{
+    display: block;
+    padding: 12px;
+}
+
+#container header nav ul li:hover {
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+
+#container #main{
+    width: 90%;
+    margin : 0 auto;
+}
+
+/* 가변 크기(%) 부모의 상대 비율대로 크기를 정렬 */
+/* 90% * (0.9) = 81% */
+#container #main #content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#main #content h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* footer style */
+
+footer{
+    color: black;
+    border-top: 2px solid black;
+    height: 40px;
+    /* background-color: #ccc; */
+    padding : 40px;
+}
+
+footer #footer_menu li {
+    float: left;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+}
+
+footer #footer_menu li:last-child{
+    border-right: none;
+}
+
+footer #footer_menu li a{
+    color: black;
+    margin: 0 5px;
+}
+
+/* index style */
+#main #content .main_pic{
+    width: 300px;
+    margin: 20px auto;
+
+}
+
+#main #content .main_pic img{
+    width: 300px;
+    height: 260px;
+    border-radius: 4px;
+}
+
+/* product style */
+
+#main #content .product_h1{
+    margin: 10px 0;
+}
+
+#content #watermelon img, #strawberry img{
+    border-radius: 20px;
+}
+
+#content div .product_p{
+    margin: 40px 0;
+}
+
+/* border style */
+#content>div>h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#content table{
+    border : 1px solid #ccc;
+    border-collapse: collapse;
+    margin : 40px auto;
+    
+    
+}
+
+#content table tr th{
+    background-color: #eee;
+}
+#content table th,td{
+    border: 1px solid #ccc;
+    font-size: 12px;
+    padding: 1px 3px;
+}
+
+
+
+/* pc기준 */
+
+@media screen and (min-width:800px) {
+    #container header{
+        height: 80px;
+    }
+
+    #container header #logo{
+        height: 80px;
+        margin: 0;
+        line-height: 80px;
+        padding-left: 40px;
+    }
+
+    #container header nav{
+        height: 80px;
+        margin : 0;
+        line-height: 80px;
+    }
+
+    #container header nav ul{
+        padding-left : 240px
+    }
+
+    #container header nav ul li{
+        float: left;
+    }
+
+    #container header nav ul li a{
+        padding : 0 30px;
+    }
+
+    #container #main{
+        width: 1000px;
+    }
+
+    #container #main #content{
+        width : 900px;
+    }
+
+    /* index style */
+
+    #main #content h2{
+        margin: 30px;
+        font-size : 36px;
+        color: skyblue;
+        -webkit-text-stroke: 1px black;
+    }
+    
+    #main #content .main_pic{
+        width: 500px;
+    }
+    #main #content .main_pic img{
+        height: 500px;
+        width: 500px;
+        border-radius: 250px;
+    }
+
+    /* product style */
+    #main #content .product_h1{
+        text-align: left;
+    }
+    
+    #content #watermelon, #strawberry{
+        height: 350px;
+    }
+    #content #watermelon img, #strawberry img{
+        float: left;
+        line-height: 2;
+        width: 300px;
+        height: 300px;
+        border-radius: 6px;
+        margin-right: 16px;
+    }
+    
+    #content #watermelon p, #strawberry p{
+        line-height: 2;
+    }
+
+    /* border style */
+    #content>div>h1{
+        text-align: center;
+    }
+    #content table{
+        border : 2px solid #ccc;
+        border-collapse: collapse;
+        width: 700px;
+        margin: 30px auto;
+    }
+    #content table th, td{
+        border: 1px solid #ccc;
+        padding : 10px;
+        text-align: center;
+    }
+    
+    #content table thead{
+        background-color: #eee;
+    }
+    
+    #content table td:nth-of-type(2){
+        text-align: left;
+    }
+
+    /* login 스타일 */
+    #content form {
+        width: 440px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+
+    #content form ul{
+        padding: 20px 40px;
+    }
+
+    #content form ul li{
+        margin: 20px;
+    }
+
+    #content form label{
+        width: 80px;
+        float: left;
+    }
+
+    /* 속성 선택자(태그[측정 = '속성값']) */
+    #content form input[type='text'], input[type ='password']{
+        width: 200px;
+        height: 25px;
+        padding: 4px;
+    }
+    #content form input[type='submit'],input[type ='reset']{
+        padding: 5px 8px;
+    }
+}

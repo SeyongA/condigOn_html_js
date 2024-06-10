@@ -25,6 +25,7 @@
 #content .product_list li img{
     float: left;
 }
+
 #content .product_list li:hover .detail{
 transform: translateY(-200px);
 }
