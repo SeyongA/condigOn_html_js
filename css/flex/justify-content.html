@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direcion</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        #wrap{
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid black;
+            background-color: #eee;
+            display: flex;
+            /* 수평정렬 - 왼쪽, 오른쪽, 가운데, 균등  */
+            /* justify-content: center; */
+            
+            justify-content: flex-end;
+            /* right랑 차이점???? */
+
+            /* justify-content: flex-start; */
+            /* left랑 차이점???? */
+            
+            /* justify-content: space-between; */
+            /* 끝에 마진이 없는 균등배열임 */
+
+            /* justify-content: space-around; */
+            /* 끝에 마진을 남기고싶으면 쓰는 균등배열 */
+        }
+
+        #wrap div{
+            width: 100px;
+            padding: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-content 속성</h1>
+    <div id="wrap">
+        <div style="background-color: coral;">A</div>
+        <div style="background-color: lightblue;">B</div>
+        <div style="background-color: khaki;">C</div>
+        <div style="background-color: pink;">D</div>
+    </div>
+</body>
+</html>

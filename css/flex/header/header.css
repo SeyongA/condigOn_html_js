@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* 공통 style */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #efcec2;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* hadder style */
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(98, 61, 218);
+}
+
+header .navbar_logo{
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+header .navbar_logo a:hover{
+    color: lightgray;
+}
+
+header .navbar_menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header .navbar_menu li{
+    text-align: center;
+    padding: 10px;
+}
+
+header .navbar_menu li:hover{
+    background-color: rgb(53, 109, 132);
+    color: black;
+    border-radius: 5px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    header .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .navbar_menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 100px;
+    }
+    header .navbar_menu li{
+        padding :16px 24px;
+    }
+}

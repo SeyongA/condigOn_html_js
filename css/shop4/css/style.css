@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/* 공통 style */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#container #main{
+    min-height: 700px;
+}
+a{
+    text-decoration: none;
+    color: #efcec2;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* hadder style */
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(98, 61, 218);
+}
+
+header .navbar_logo{
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+header .navbar_logo a:hover{
+    color: lightgray;
+}
+
+header .navbar_menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header .navbar_menu li{
+    text-align: center;
+    padding: 10px;
+}
+
+header .navbar_menu li:hover{
+    background-color: rgb(53, 109, 132);
+    color: black;
+    border-radius: 5px;   
+}
+
+header .navbar_toggleBtn{
+    position: absolute;
+    right: 30px;
+    /* 부모 요소의 상대크기 = 1em = 16px */
+    /* 1.5 * 16px = 24px */
+    font-size: 1.5em;
+}
+#container main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#container main #content{
+    width: 90%;
+    margin: 20px auto;
+}
+
+#container main #content h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* footer style */
+
+footer{
+    color: black;
+    border-top: 2px solid black;
+    height: 20px;
+    /* background-color: #ccc; */
+    padding : 20px;
+}
+
+footer #footer_menu{
+    margin : 10px 40px;
+}
+
+footer #footer_menu li {
+    float: left;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+}
+
+footer #footer_menu li:last-child{
+    border-right: none;
+}
+
+footer #footer_menu li a{
+    color: black;
+    margin: 0 5px;
+}
+
+/* index style */
+
+#main #content .main_pic{
+    width: 300px;
+    margin: 20px auto;
+
+}
+
+#main #content .main_pic img{
+    width: 300px;
+    height: 260px;
+    border-radius: 4px;
+}
+
+/* product style */
+
+#main #content .product_h1{
+    margin: 10px 0;
+}
+
+#content #watermelon img, #strawberry img{
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+}
+
+#content #watermelon p, #strawberry p{
+    text-align: justify;
+}
+
+
+#content div .product_p{
+    margin: 40px 0;
+}
+
+/* border style */
+#content>div>h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#content table{
+    border : 1px solid #ccc;
+    border-collapse: collapse;
+    margin : 40px auto;
+    
+    
+}
+
+#content table tr th{
+    background-color: #eee;
+}
+#content table th,td{
+    border: 1px solid #ccc;
+    font-size: 11px;
+    padding: 5px 5px;
+}
+
+/* login 스타일 */
+#content form {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+#content form ul{
+    padding: 0;
+}
+
+#content form ul li{
+    margin: 20px;
+}
+
+#content form ul li input{
+    padding: 3px 1px;
+}
+#content form label{
+    width: 80px;
+    float: left;
+}
+
+#content form ul #button input{
+    margin: 10px;
+    padding: 5px;
+    width: 250px;
+}
+
+
+/* 테블릿 기준 */
+@media screen and (min-width: 768px) {
+    #container #main{
+        min-height: 900px;
+    }
+
+    header .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .navbar_logo{
+        margin: 0 30px  ;
+    }
+
+    header .navbar_menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 100px;
+    }
+
+    header .navbar_menu li{
+        padding :16px 24px;
+    }
+
+    footer #footer_menu{
+        margin : 10px 40px;
+    }
+
+    #main #content .main_pic{
+        width: 500px;
+        margin: 20px auto;
+    }
+
+    #main #content .main_pic img{
+        width: 500px;
+        height: 450px;
+        border-radius: 4px;
+    }
+
+    /* product style */
+    #main #content .product_h1{
+        text-align: center;
+        
+    }
+    #content div h3{
+        text-align: center;
+    }
+    #content #watermelon, #strawberry{
+        height: 350px;
+        float: left;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        margin : 30px 0;
+        padding: 10px;
+    }
+    #content #watermelon img, #strawberry img{
+        float: left;
+        line-height: 2;
+        width: 240px;
+        height: 260px;
+        border-radius: 15px;
+        margin: 40px 20px 0 20px;
+    }
+    
+    #content #watermelon p, #strawberry p{
+        margin-top: 10px;
+        line-height: 1.8;
+    }
+
+    header .navbar_toggleBtn{
+            display: none;
+    }
+
+
+    /* border 스타일 */
+
+
+    #content table{
+        border : 2px solid #ccc;
+        border-collapse: collapse;
+        width: 700px;
+        margin: 30px auto;
+    }
+    #content table th, td{
+        border: 1px solid #ccc;
+        padding : 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #content table thead{
+        background-color: #eee;
+    }
+
+    #content table td:nth-of-type(2){
+        text-align: left;
+    }
+
+    #main #content .board_h1{
+        text-align: center;
+    }
+
+    /* login 스타일 */
+    #content form {
+        width: 750px;
+        margin: 0 auto;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+    }
+
+    #content form ul{
+        padding: 40px;
+    }
+
+    #content form ul li{
+        margin: 20px 50px;  
+    }
+
+    #content form ul li input{
+        padding: 5px 40px 5px 10px;
+        font-size: 18px;
+    }
+    #content form label{
+        width: 80px;
+        float: left;
+    }
+
+    #content form ul #button{
+        margin-left: 40px;
+    }
+    #content form ul #button input{
+        margin: 5px;
+        padding: 5px;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .navbar_menu{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 100px;
+    }
+    #main #content .main_pic{
+        width: 550px;
+        margin: 30px auto;
+    
+    }
+    #main #content .main_pic img{
+        width: 550px;
+        height: 500px;
+        border-radius: 5px;
+    }
+    #content #watermelon img, #strawberry img{
+        float: left;
+        line-height: 2;
+        width: 300px;
+        height: 280px;
+        border-radius: 15px;
+        margin: 40px 20px 0 20px;
+    }
+
+    #content #watermelon p, #strawberry p{
+        padding: 20px;
+        line-height: 2;
+    }
+
+    #container #main #content h2{
+        font-size: 30px;
+    }
+
+    /* border 스타일 */
+
+
+    #content table{
+        border : 3px solid #ccc;
+        width: 1020px;
+        margin: 30px auto;
+    }
+
+    #content table th, td{
+        font-size: 18px;
+    }
+
+    #content table thead{
+        background-color: #eee;
+    }
+
+}
+
+
