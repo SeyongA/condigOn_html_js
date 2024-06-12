@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교, 논리 연산자</title>
+</head>
+<body>
+    <script>
+        let num1 = 8, num2 = 5, num3 = 7;
+        // console.log(num1 > num2);
+        // console.log(num1 < num2);
+        // console.log(num1 == num2);
+        // console.log(num1 === num2);
+        // console.log(num1 != num2);
+        // console.log(num1 !== num2);
+
+        //논리 연산, 비교 연산 2개이상
+        // 논리곱(그리고) - &&
+        // 논리합(또는) - ||
+        // 논리부정 - !
+
+        console.log((num1>num2) && (num3>num2));
+        console.log((num1>num2) || (num3<num2));
+        console.log(!(num1===num2));
+
+        let result = (10 === 11) ? "참입니다." : "거짓입니다";
+
+        document.write("결과값 : " + result + "<br>")
+
+        
+        //부모님의 나이 비교
+        let fatherAge = 47;
+        let motherAge = 48;
+
+        let value = (fatherAge>motherAge) ? "true":"false";
+        document.write("결과값 : " + value);
+        
+
+
+    </script>
+</body>
+</html>

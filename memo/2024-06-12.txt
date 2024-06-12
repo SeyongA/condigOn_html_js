@@ -1,0 +1,19 @@
+수업일정표
+1. 자료형, 변수
+2. 연산자(산술, 논리)
+3. 제어문(조건, 반복문)
+4. 함수(모듈)
+5. 객체(배열 포함)
+6. DOM(BOM) - Web에 적용
+7. JQuery - 라이브러리(JavaScript를 Web에 최적화)
+
+
+Web Program langue
+html - 마크업언어(표시)
+css - style 표시 
+JavaScript - <script>~<script>
+
+실질적인 프로그래밍 언어
+C, Java, python, JavaScript
+알고리즘(선택, 반복, 조건 처리)
+
