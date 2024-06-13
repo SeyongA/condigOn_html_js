@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while 반복문 에제</title>
+</head>
+<body>
+    <script>
+        console.log("안녕하세요");
+        /*
+        반복문(while)
+
+        while(조건식){
+            조건식이 True이면 실행
+        }
+        */
+       let i = 0;
+       let sum = 0;
+       let BSum = 0;
+
+       while(i<=10){
+        // document.write((i+1) + "번째 안녕하세요<br>");
+        // i++;
+        sum += i;
+        document.write(BSum + " + " + i + " = " + sum + "<br>");
+        BSum = sum;
+        i++;
+       }
+
+    //    let str1 = prompt("abc 입력");
+
+    //    if(str1 === "abc"){
+    //     document.write("정상");
+    //    } else{
+    //     document.write("비정상");
+    //    }
+
+       
+    </script>
+</body>
+</html>

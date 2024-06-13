@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습</title>
+</head>
+<body>
+    <script>
+        //나이가 15세 이상이면 관람가, 아니면 관람불가
+
+        let age = parseInt(Math.random(1)*99 + 1);
+
+        console.log(typeof(age >= 15));
+
+        if(age >= 15){
+            document.write(age + "살 이군요, 관람 가능합니다.")
+        } else{
+            document.write(age + "살 이군요.. 관람 불가능합니다.")
+        }
+    </script>
+</body>
+</html>
