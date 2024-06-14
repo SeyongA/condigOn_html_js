@@ -1,0 +1,20 @@
+내장 객체
+Date 객체
+let now = new Date();
+
+태그에서 함수 사용하는 방법
+onclick 속성
+button
+a
+getElementByld("wrap")을 사용
+
+
+switch (value) {
+    case value:
+        실행문;
+        break;
+
+    default:
+        실행문;
+        break;
+}
