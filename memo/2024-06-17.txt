@@ -1,0 +1,6 @@
+
+
+Dom 
+document.getElementById("Id 선택자")
+document.querySelector("id, class,");
+document.querySelectorAll("id, class, 태그선택자")

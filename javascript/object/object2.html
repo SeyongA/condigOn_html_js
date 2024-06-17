@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+            객체(object) -  여러가지 자료형을 포함하는 '복합' 자료형이다.
+            객체는 속성과 매서드로 구성됨.
+
+            let 객체 이름 = {
+                속성이름: 값, 
+                속성이름: 값, 
+                속성이름: function()(...)
+            }
+                복합 자료형 변수,배여르, 함수 모두를 포함
+        */
+        let car = {
+            brand: "iconic6",
+            color: "silver",
+            cc: 2500,
+
+            charge: function () {
+                alert("전기로 충전합니다");
+            }
+        }// <<객체
+
+        // document.write(car.brand);   ?? 
+        document.write("<br>")
+        document.write(`브랜드: ${car.brand}`);
+        document.write("<br>")
+        document.write(`색상: ${car.color}`);
+        document.write("<br>")
+        document.write(`배기량: ${car.cc}`);
+        car.charge();
+
+
+
+    </script>
+</body>
+
+</html>
