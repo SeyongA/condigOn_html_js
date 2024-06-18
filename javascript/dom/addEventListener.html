@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener() 함수 예제 </title>
+</head>
+<body>
+    <!-- 자바스크립트의 객체의 속성인 onclick 이용해서 이벤트 실행 -->
+    <div id="content">
+        <img src="images/peach.jpeg" alt="복숭아" id="fruit">
+    </div>
+
+    <script>
+        let fruitImg = document.querySelector("#fruit");
+
+        fruitImg.addEventListener('mouseover', () => {
+            fruitImg.src = "images/blueberry.jpg";
+        })
+
+        fruitImg.addEventListener('mouseout', function () {
+            fruitImg.src = "images/peach.jpeg";
+        })
+
+
+
+
+
+        /*
+        //함수 정의후 호출
+        function changePic() {
+            fruitImg.src = "images/blueberry.jpg";
+        }
+        function originPic() {
+            fruitImg.src = "images/peach.jpeg";
+        }
+        // on 접두사를 생략, 두번째인자에 함수
+        // mouseover - 마우스를 올렸을때 이벤트 발생
+        // mouseout - 마우스가 벗어났을 때 이벤트 발생
+        fruitImg.addEventListener('mouseover', changePic);
+        fruitImg.addEventListener('mouseout', originPic);
+
+        */
+
+
+    </script>
+</body>
+</html>

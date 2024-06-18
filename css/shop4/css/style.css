@@ -33,6 +33,7 @@ header .navbar{
 header .navbar_logo{
     padding-left: 20px;
     font-size: 24px;
+    height: 50px;
 }
 
 header .navbar_logo a:hover{
@@ -63,6 +64,12 @@ header .navbar_toggleBtn{
     /* 1.5 * 16px = 24px */
     font-size: 1.5em;
 }
+
+header .navbar_toggleBtn .active{
+    display: flex;
+    
+}
+
 #container main{
     width: 90%;
     margin: 0 auto;

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 예제</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+    <style>
+        .content{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .wrap * {
+            display: block;
+            border: 2px solid #ddd;
+            margin: 16px;
+            padding: 5px;
+            color : lightgray
+        }
+
+    </style>
+    <script>
+        $(function () {
+            //parent() - 부모요소, next() - 바로 다음 요소
+            $('span').parent().next().css({border : '2px solid blue', });
+            // ul 의 자식요소
+            $("ul").children().css({color: "hotpink"});
+
+            // span(텍스트) 찾기
+            $("ul").find('span').css({color: "black",  fontWeight : "bold" });
+            
+
+            $('span').parent().css({color : 'red'});
+        })
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="wrap">
+            <ul> (grandparent)
+                <li> li (direct parent)
+                    <span>span</span>
+                </li>
+                <li>li (parent)</li>
+                <li>li (parent)</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+    
+</body>
+</html>
