@@ -6,6 +6,17 @@ Project
 4. back (java)- spring boot
 
 
+*Git : 코드의 형상관리도구/ 코드 버전관리
+
+내 컴퓨터에 git을 설치하면 내 컴퓨터에 사용 가능한 버전 관리 도구가 설치가 된 것.
+
+작업공간 : 작업하고 있는 프로젝트 폴더의 위치
+staging영역 : 새로운 버전을 저장하기 위해 변경된 내용을 임시로 저장해 놓는 공간
+
+repository(저장소) : 변경 이력을 저장해놓는 공간(버전이 기록된 곳)
+	1)Local Repository : 내 컴퓨터에 있는 저장소
+	2) Remote Repository : Github에 있는 저장소
+
 *git 사용법*
 	https://github.com/SeyongA
 	내컴퓨터(local) <--> 원격 저장소(github)

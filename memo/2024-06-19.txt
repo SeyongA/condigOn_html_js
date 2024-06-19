@@ -1,0 +1,6 @@
+c 드라이브에서 우클릭 해서 open git bash를 열면됨
+$ git clone https://github.com/SeyongA/homepage.git <- 레파지토르 주소
+
+$ cd homepage/
+
+$ code . 

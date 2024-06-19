@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 예제</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            /* 애니메이션 이름 */
+            animation-name: changeBg;
+            /* 지속 시간 */
+            animation-duration: 3s;
+            /* 반복 횟수*/
+            /* animation-iteration-count: 2; */
+            /* 무한 반복 */
+            animation-iteration-count: infinite;
+        }
+        #box1{
+            background-color: aqua;
+        }
+
+        #box2{
+            background-color: pink;
+            animation-name: rotate;
+            margin-top: 20px;
+            animation-duration: 2s;
+
+        }
+            @keyframes changeBg {
+                /* 0% */
+                from{ 
+                    background-color : aqua;
+                }
+                50%{
+                    background-color: greenyellow;
+                    border-radius: 30%;
+                }
+                /* 100% */
+                to{
+                    background-color :green;
+                    border-radius: 50%;
+                }
+            }
+
+            @keyframes rotate {
+                from{
+                    background-color: pink;
+                    transform: rotate(0);
+                }
+                25%{
+                    transform: rotate(90deg);
+                    margin-left : 50px;
+                    margin-top: 50px;
+                }
+                50%{
+                    background-color: bisque;
+                    transform: rotate(180deg);
+                    margin-left : 100px;
+                    margin-top: 100px;
+                }
+                75%{
+                    transform: rotate(270deg);
+                    margin-left: 150px;
+                    margin-top: 150px;
+                }
+                to{
+                    background-color: aliceblue;
+                    transform: rotate(360deg);
+                    margin-left: 200px;
+                    margin-top: 200px;
+                }
+            }
+
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>
