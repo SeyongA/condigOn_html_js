@@ -1,0 +1,17 @@
+h4{
+    color: red;
+}
+
+@media screen and (max-width : 768px) {
+    .col-4{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .col-4{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
